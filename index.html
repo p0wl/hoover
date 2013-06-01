@@ -10,42 +10,8 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      .bg {
-        background-image:url(img/bg.png); 
-        background-repeat: repeat-y;
-      }
-      .entry {
-        background-image:url(img/item.png); 
-        background-position: 0px 0px; 
-        background-repeat: no-repeat;
-        min-height: 100px;
-        padding-bottom: 20px;
-      }
-
-      .caption {
-        background-image: none;
-      }
-
-      .entry h1 {
-        padding: 30px 0 0 160px;
-        color: #555;
-      }
-
-      .entry h3 {
-        padding: 30px 0 0px 160px;
-        margin: 0px;
-        color: #555;
-      }
-
-      .entry p {
-        padding: 0 0 0 160px;
-        color: #555;
-      }
-
-
-    </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/hoover.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -54,40 +20,39 @@
   </head>
 
   <body>
-
-    <div class="container">
-
-      <div class="bg">
-        <br >
+    <div id="wrap">
+    <div class="caption">
         <br />
-        <div class="entry caption">
-          
+        <center>
           <h1>Hoover - News Stream</h1>
-          <p>Twitter for your project</p>
+          <p>Combined Twitter and Stackoverflow for your project</p>
+        </center>
+    </div>
+    <div class="container">
+      <div class="bg">
 
+
+
+        <div class="entry">
+          <h3><img class="img-circle portrait" src="img/portrait.png">{{title}}</img></h3>
+          <p>
+            <p>{{creator}} - {{date}} {{time}} - {{tags}}
+              <br />
+              <a href="{{link}}">
+                {{link}}
+              </a>
+            </p>
+          </p>
+          <p>
+            {{description}}
+          </p>
         </div>
-
-        <br /><br />
 
         <div class="entry">
           
-          <h3>New Version of Backlog.docx</h3>
+          <h3><img class="img-circle portrait" src="img/portrait.png">Test</img></h3>
           <p>
-            <a href="http://google.de">http://google.de</a>
-            <span class="pull-right">PM - 22.05.2013 13:30 - #sp #sob #isp</span>
-          </p>
-
-          <p>
-            New version of product backlog pushed to the repo. Includes changes for next release. Waiting for approval.
-          </p>
-
-        </div>
-
-        <div class="entry">
-          
-          <h3>Initial commit for hoover!</h3>
-          <p>
-            <a href="http://mail.google.de">http://github.com/p0wl/hoover</a>
+            <a href="http://github.com/p0wl/hoover">http://github.com/p0wl/hoover</a>
             <span class="pull-right">PM - 21.05.2013 13:30 - #meta #hoover #github</span>
           </p>
 
@@ -99,7 +64,7 @@
 
         <div class="entry">
           
-          <h3>Approval of Story Card 26!</h3>
+          <h3><img class="img-circle portrait" src="img/portrait.png">{{title}}</img></h3>
           <p>
             <a href="http://mail.google.de">http://google.de</a>
             <span class="pull-right">PM - 21.05.2013 13:30 - #isp #cust</span>
@@ -125,19 +90,22 @@
 
         </div>
 
-        <br /><br />
-
-        <div class="entry caption">
-          <p>&copy; Paul M&ouml;lders 2013</p>
-        </div>
       </div>
-
     </div> <!-- /container -->
 
+
+  </div>
+    <div class="caption-bottom" id="footer">
+      <br />
+        <center>
+          <p>&copy; Paul M&ouml;lders 2013</p>
+        </center>
+    </div>
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="js/bootstrap.js"></script>
+    <script src="js/hoover.js"></script>
   </body>
 </html>

@@ -1,0 +1,87 @@
+/* hoover.css */
+
+html,
+  body {
+
+	background-color: #2980B9;
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+  }
+
+/* Wrapper for page content to push down footer */
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+  }
+
+  /* Set the fixed height of the footer here */
+  #push,
+  #footer {
+    height: 50px;
+  }
+  #footer {
+  }
+
+.container {
+	background-color: #2980B9;
+	border: 10px solid #2980B9;
+	margin-bottom: 10px;
+}
+
+.portrait {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+}
+
+.entry {
+    border-top: 2px solid #3498DB;
+	color: #FFF;
+	padding: 20px;
+	background-color: 5px solid #2980B9;
+}
+
+.caption {
+    background-image: url(../img/bg-header.png);
+    background-position: center;
+    color: #ECF0F1;
+}
+
+
+.caption h1
+{
+	font-size: 42pt;
+	font-weight: lighter;
+}
+
+.caption p
+{
+	font-size: 15pt;
+	font-weight: lighter;
+	padding-bottom: 20px;
+}
+
+.caption-bottom {
+    background-color: #2980B9;
+    color: #ECF0F1;
+}
+.caption-bottom p
+{
+	font-size: 15pt;
+	font-weight: lighter;
+}
+.entry h3 {
+    color: #ECF0F1;
+}
+
+.entry p {
+    color: #ECF0F1;
+    font-weight: lighter;
+}
+
+a, a:hover, a:visited, a:active {
+	color: #ECF0F1;
+}
